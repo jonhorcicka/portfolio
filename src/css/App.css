@@ -1,6 +1,6 @@
 /*=============== VARIABLES CSS ===============*/
 /*========== Barvy ==========*/
-/*Color mode HSL(hue, saturation, lightness)*/
+/*Color mode HSL(hue, saturation, lightness*/
 /*========== Font and typography ==========*/
 /*.5rem = 8px | 1rem = 16px ...*/
 /*========== Font weight ==========*/
@@ -30,18 +30,18 @@ body,
 button,
 input,
 textarea {
-  font-family: var("Courier New", sans-serif);
-  font-family: var(16px);
+  font-family: "Courier New", sans-serif;
+  font-family: 16px;
 }
 
 body {
-  background-color: var(hsl(var(0), var(0%), 98%));
-  color: var(hsl(var(0), var(0%), 46%));
+  background-color: hsl(0deg, 0%, 98%);
+  color: hsl(0deg, 0%, 46%);
 }
 
 h1, h2, h3 {
-  color: var(hsl(var(0), var(0%), 20%));
-  font-weight: var(600);
+  color: hsl(0deg, 0%, 20%);
+  font-weight: 600;
 }
 
 ul {
@@ -68,13 +68,13 @@ img {
 }
 
 .section__title {
-  font-size: var(36px);
-  color: var(hsl(var(0), var(0%), 20%));
+  font-size: 36px;
+  color: hsl(0deg, 0%, 20%);
 }
 
 .section__subtitle {
   display: block;
-  font-size: var(14px);
+  font-size: 14px;
   margin-bottom: 64px;
 }
 
@@ -96,19 +96,19 @@ img {
 
 .button {
   display: inline-block;
-  background-color: var(hsl(var(0), var(0%), 20%));
-  color: var(#fff);
+  background-color: hsl(0deg, 0%, 20%);
+  color: rgba(255, 255, 255, 0.7450980392);
   padding: 20px 32px;
   border-radius: 16px;
-  font-weight: var(500);
+  font-weight: 500;
 }
 
 .button:hover {
-  background-color: var(hsl(var(0), var(0%), 0%));
+  background-color: hsl(0deg, 0%, 0%);
 }
 
 .button__icon {
-  margin-left: var(0.5rem);
+  margin-left: 0.5rem;
 }
 
 .button--flex {
