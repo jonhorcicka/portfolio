@@ -1,16 +1,19 @@
 import React from 'react';
 import "./css/App.css";
 import Header from './components/header/Header';
+import Home from './components/home/Home';
 
 const App = () => {
     return (
         <>
-        <Header/>
-        <div></div>
-        
+        <Header />
+
+        <main className='main'>
+        <Home />
+        </main>
         </>
 
     );
-}
+};
 
 export default App

@@ -1,0 +1,46 @@
+@import "../partials/variables"
+
+.home__content
+    grid-template-columns: 116px repeat(2, 1fr)
+    padding-top: 88px
+    column-gap: 32px
+    align-items: center
+
+.home__social
+    display: grid
+    grid-template-columns: max-content
+    row-gap: 16px
+
+.home__social-icon
+    font-size: 20px
+    color: $title-color
+
+.home__social-icon:hover
+    color: $title-color-dark
+
+.home__title
+    font-size: $big-font-size
+    margin-bottom: $mb-0-25
+
+.home__hand
+    width: 38px
+    height: 38px
+    margin-left: 7px
+
+.home__subtitle
+    position: relative
+    font-size: $h3-font-size
+    padding-left: 0px
+    font-weight: $font-normal
+    margin-bottom: $mb-1
+
+.home__img
+    background: url(../assets/profile.jpg)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    box-shadow: inset 0 0 0 9px rgb( 255, 255, 255)
+    order: 1
+    justify-self: center
+    width: 300px
+    height: 300px

@@ -31,7 +31,7 @@ button,
 input,
 textarea {
   font-family: "Courier New", sans-serif;
-  font-family: 16px;
+  font-size: 16px;
 }
 
 body {
@@ -114,4 +114,17 @@ img {
 .button--flex {
   display: inline-flex;
   align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+  }
 }/*# sourceMappingURL=App.css.map */
