@@ -130,8 +130,14 @@ img {
   }
 }
 @media screen and (max-width: 768px) {
+  body {
+    margin: 0 0 48px 0;
+  }
   .section {
     padding: 32px 0 64px;
+  }
+  .section__subtitle {
+    margin-bottom: 3rem;
   }
 }
 @media screen and (max-width: 350px) {

@@ -1,0 +1,59 @@
+/*=============== VARIABLES CSS ===============*/
+/*========== Barvy ==========*/
+/*Color mode HSL(hue, saturation, lightness*/
+/*========== Font and typography ==========*/
+/*.5rem = 8px | 1rem = 16px ...*/
+/*========== Font weight ==========*/
+/*========== Margenes Bottom ==========*/
+/*.5rem = 8px | 1rem = 16px ...*/
+/*========== z index ==========*/
+.skills__container {
+  column-gap: 48px;
+  justify-content: center;
+}
+
+.skills__content {
+  background-color: rgba(255, 255, 255, 0.7450980392);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 32px 64px;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.skills__title {
+  font-size: larger;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.skills__box {
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+}
+
+.skills__group {
+  display: grid;
+  align-items: flex-start;
+  row-gap: 16px;
+}
+
+.skills__data {
+  display: flex;
+  column-gap: 8px;
+}
+
+.skills .bx-badge-check {
+  font-size: 16px;
+  color: hsl(0deg, 0%, 20%);
+}
+
+.skills__name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.skills__level {
+  font-size: 10px;
+}/*# sourceMappingURL=skills.css.map */

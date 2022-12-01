@@ -1,1 +1,72 @@
 @import "../partials/variables"
+
+.about__container
+    grid-template-columns: repeat(2, 1fr)
+    column-gap: 64px
+    align-items: center
+
+.about__img
+    width: 350px
+    justify-self: center
+    border-radius: 24px
+
+.about__info
+    grid-template-columns: repeat(3, 140px)
+    gap: 8px
+    margin-bottom: $mb-2
+
+.about__box
+    background-color: $container-color
+    border: 1px solid rgba(0, 0, 0, 0.1)
+    border-radius: 12px
+    text-align: center
+    padding: 16px 20px
+
+.about__icon
+    font-size: 24px
+    color: $title-color
+    margin-bottom: $mb-0-5
+
+.about__title
+    font-size: $small-font-size
+    font-weight: $font-medium
+
+.about__subtitle
+    font-size: $tiny-font-size
+
+.about__description
+    padding: 0 64px 0 0
+    margin-bottom: $mb-2-5
+
+@media screen and (max-width: 992px) 
+    .about__container
+        grid-template-columns: 1fr
+        row-gap: 40px
+
+    .about__img
+        width: 220px
+
+    .about__box
+        padding: 12px 8px
+
+    .about__data
+        text-align: center
+
+    .about__info
+        justify-content: center
+
+    .about__description
+        padding: 0 80px
+        margin-bottom: 32px
+  
+@media screen and (max-width: 576px)
+    .about__info
+        grid-template-columns: repeat(3, 1fr)
+
+    .about__description
+        padding: 0
+  
+@media screen and (max-width: 350px)
+    .about__info
+        grid-template-columns: repeat(2, 1fr)
+          
