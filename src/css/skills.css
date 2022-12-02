@@ -13,7 +13,7 @@
 }
 
 .skills__content {
-  background-color: rgba(255, 255, 255, 0.7450980392);
+  background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 32px 64px;
   border-radius: 20px;
@@ -56,4 +56,27 @@
 
 .skills__level {
   font-size: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .skills__container {
+    grid-template-columns: max-content;
+    row-gap: 32px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .skills__container {
+    grid-template-columns: 1fr;
+  }
+  .skills__content {
+    padding: 24px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .skills__box {
+    column-gap: 20px;
+  }
+  .skills__name {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=skills.css.map */

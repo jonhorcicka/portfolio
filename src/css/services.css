@@ -1,0 +1,145 @@
+/*=============== VARIABLES CSS ===============*/
+/*========== Barvy ==========*/
+/*Color mode HSL(hue, saturation, lightness*/
+/*========== Font and typography ==========*/
+/*.5rem = 8px | 1rem = 16px ...*/
+/*========== Font weight ==========*/
+/*========== Margenes Bottom ==========*/
+/*.5rem = 8px | 1rem = 16px ...*/
+/*========== z index ==========*/
+.services__container {
+  justify-content: center;
+  column-gap: 29px;
+}
+
+.services__content {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 96px 150px 32px 40px;
+}
+
+.services__icon {
+  display: block;
+  font-size: 32px;
+  color: hsl(0deg, 0%, 20%);
+  margin-bottom: 1rem;
+}
+
+.services__title {
+  font-size: 20px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.services__button {
+  color: hsl(0deg, 0%, 20%);
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  column-gap: 4px;
+  cursor: pointer;
+}
+
+.services__button-icon {
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.services__button:hover .services__button-icon {
+  transform: translateX(4px);
+}
+
+.services__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.services__modal-content {
+  width: 500px;
+  position: relative;
+  background-color: #fff;
+  padding: 72px 40px 40px;
+  border-radius: 24px;
+}
+
+.services__modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 24px;
+  color: hsl(0deg, 0%, 20%);
+  cursor: pointer;
+}
+
+.services__modal-title,
+.services__modal-description {
+  text-align: center;
+}
+
+.services__modal-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.services__modal-description {
+  font-size: 14px;
+  padding: 0 56px;
+  margin-bottom: 2rem;
+}
+
+.services__modal-services {
+  row-gap: 12px;
+}
+
+.services__modal-service {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.services__modal-icon {
+  color: hsl(0deg, 0%, 20%);
+  font-size: 18px;
+}
+
+.services__modal-info {
+  font-size: 14px;
+}
+
+.active-modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (max-width: 768px) {
+  .services__icon {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .services__modal-description {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 350px) {
+  .services__container {
+    grid-template-columns: max-content;
+  }
+  .services__content {
+    padding-right: 96px;
+  }
+}/*# sourceMappingURL=services.css.map */
