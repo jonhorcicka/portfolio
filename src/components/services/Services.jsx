@@ -15,7 +15,7 @@ const Services = () => {
             <div className="services__container container grid">
                 <div className="services__content">
                     <div>
-                        <i className="uil uil-web-grid services__icon"></i>
+                        <i className="uil uil-arrow services__icon"></i>
                         <h3 className="services__title">Product <br /> Designer </h3>
                     </div>
 

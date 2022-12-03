@@ -1,6 +1,6 @@
 {
   "name": "portfolioWebsite",
-  "homepage": "jonhorcicka.github.io/portfolio",
+  "homepage": "http://jonhorcicka.github.io/portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
