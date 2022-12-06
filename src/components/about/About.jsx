@@ -1,14 +1,14 @@
 import React from 'react';
 import "../../css/about.css";
 import AboutImg from "../../assets/about.jpg";
-import CV from "../../assets/John-Cv.pdf";
+import CV from "../../assets/CV - Jan Horčička.pdf";
 import Info from "./Info";
 
 const About = () => {
     return(
         <section className="about section" id="about">
             <h2 className="section__title">O mně</h2>
-            <span className="section__subtitle">Můj úvod</span>
+            <span className="section__subtitle">Stručný úvod</span>
 
             <div className="about__container container grid">
                 <img src={AboutImg} alt="Me" className="about__img" />
@@ -16,8 +16,11 @@ const About = () => {
                 <div className="about__data">
                     <Info />
 
-                    <p className="about__description">Junior front-end developer, I create web pages UI / UX user interface, I have tears of experience and many clients are happy with projects carried out</p>
-
+                    <p className="about__description">Začal jsem programovat v roce 2021 na jaře jako
+                      samouk a později na začátku podzimu jsem vstoupil
+                      do kurzu programovaní, kde jsem úspěšně absolvoval
+                      kurz škola kódů. Užívám si minimalistický a čístý kód. Pořád se vzdělávám a učím nové věci v oblasti kódů. Vždycky se
+                      snažím být připravený tvořit něco nového. Jsem zodpovědný a trochu punktuální. Sportuji.</p>
                     <a download="" href={CV} className="button button--flex">
                         Stáhnout CV
                         <svg

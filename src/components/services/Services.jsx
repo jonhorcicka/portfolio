@@ -10,17 +10,17 @@ const Services = () => {
     return (
         <section className="services section" id="services">
             <h2 className="section__title">Services</h2>
-            <span className="section__subtitle">What i offer</span>
+            <span className="section__subtitle">Co nabízím</span>
 
             <div className="services__container container grid">
                 <div className="services__content">
                     <div>
                         <i className="uil uil-arrow services__icon"></i>
-                        <h3 className="services__title">Product <br /> Designer </h3>
+                        <h3 className="services__title">Vývoj <br /> webových <br /> stránek </h3>
                     </div>
 
                     <span className="services__button" onClick={() => toggleTab(1)}>
-                        View More
+                        Zobrazit více
                     <i className="uil uil-arrow-right services__button-icon"></i>
                     </span>
 
@@ -29,7 +29,7 @@ const Services = () => {
                             <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"></i>
 
                             <h3 className="services__modal-title">Product Designer </h3>
-                            <p className="services__modal-description">Servis s více než 3 lety zkušeností. Poskytování kvalitní práce klientům a firmám.</p>
+                            <p className="services__modal-description">Poskytování kvalitní práce klientům a firmám.</p>
 
                             <ul className="services__modal-services grid">
                                 <li className="services__modal-service">
@@ -54,7 +54,7 @@ const Services = () => {
 
                                 <li className="services__modal-service">
                                     <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">Návrhy a makety produktů pro firmy.</p>
+                                    <p className="services__modal-info">Dělám web responzivní pro všechna rozlišení.</p>
                                 </li>
                             </ul>
                         </div>

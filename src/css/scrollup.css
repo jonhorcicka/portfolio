@@ -1,0 +1,52 @@
+/*=============== VARIABLES CSS ===============*/
+/*========== Barvy ==========*/
+/*Color mode HSL(hue, saturation, lightness*/
+/*========== Font and typography ==========*/
+/*.5rem = 8px | 1rem = 16px ...*/
+/*========== Font weight ==========*/
+/*========== Margenes Bottom ==========*/
+/*.5rem = 8px | 1rem = 16px ...*/
+/*========== z index ==========*/
+.scrollup {
+  position: fixed;
+  right: 40px;
+  bottom: -20%;
+  background-color: hsl(0deg, 0%, 20%);
+  opacity: 0.8;
+  padding: 5px 8px;
+  border-radius: 6px;
+  z-index: 1;
+  transition: 0.4s;
+  /* show Scroll */
+}
+.scrollup__icon {
+  font-size: 24px;
+  color: #fff;
+}
+.scrollup:hover {
+  background-color: hsl(0deg, 0%, 0%);
+}
+
+.show-scroll {
+  bottom: 48px;
+}
+
+@media screen and (max-width: 992px) {
+  .scrollup {
+    right: 24px;
+    padding: 4px 6px;
+  }
+  .scrollup__icon {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .show-scroll {
+    bottom: 64px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .scrollup {
+    right: 16px;
+  }
+}/*# sourceMappingURL=scrollup.css.map */

@@ -1,0 +1,42 @@
+@import "../partials/variables"
+
+.scrollup
+    position: fixed
+    right: 40px
+    bottom: -20%
+    background-color: $title-color 
+    opacity: 0.8
+    padding: 5px 8px
+    border-radius: 6px
+    z-index: 1
+    transition: .4s
+    &__icon
+        font-size: 24px
+        color: $container-color
+    &:hover
+        background-color: $title-color-dark
+
+    /* show Scroll */
+.show-scroll
+    bottom: 48px
+
+// mobilni verze
+@media screen and (max-width: 992px)
+    .scrollup
+        right: 24px
+        padding: 4px 6px
+        &__icon
+            font-size: 20px
+
+@media screen and (max-width: 768px)
+    .show-scroll
+        bottom: 64px
+
+@media screen and (max-width: 576px)
+   
+@media screen and (max-width: 350px)
+    .scrollup
+        right: 16px
+
+
+      

@@ -1,1 +1,119 @@
 @import "../partials/variables"
+
+.contact__container
+    grid-template-columns: repeat(2, max-content)
+    justify-content: center
+    column-gap: 96px
+    padding-bottom: 48px
+
+.contact__title
+    text-align: center
+    font-size: $h3-font-size
+    font-weight: $font-medium
+    margin-bottom: $mb-1-5
+    
+.contact__info
+    display: grid
+    row-gap: 16px
+    grid-template-columns: 300px
+
+.contact__card
+    background-color: $container-color
+    border: 1px solid rgba(0, 0, 0, 0.1)
+    padding: 16px
+    border-radius: 12px
+    text-align: center
+
+.contact__card-icon
+    font-size: 32px
+    color: $title-color
+    margin-bottom: $mb-0-25
+
+.contact__card-title,
+.contact__card-data
+    font-size: $small-font-size
+
+.contact__card-title
+    font-weight: $font-medium
+
+.contact__card-data
+    display: block
+    margin-bottom: $mb-0-75
+
+.contact__button
+    color: $text-color
+    font-size: $small-font-size
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    column-gap: 4px
+
+.contact__button-icon
+    font-size: 16px
+    transition: 0.3s
+
+.contact__button:hover .contact__button-icon
+    transform: translate(4px)
+
+.contact__form
+    width: 360px
+
+.contact__form-div
+    position: relative
+    margin-bottom: $mb-2
+    height: 64px
+
+.contact__form-input
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    border: 2px solid rgba(0, 0, 0, 0.3)
+    background: none
+    color: $text-color
+    outline: none
+    border-radius: 12px
+    padding: 24px
+    z-index: 1
+
+.contact__form-tag
+    position: relative
+    top: -12px
+    left: 20px
+    font-size: $smaller-font-size
+    padding: 4px
+    background-color: $body-color
+    z-index: 10
+
+.contact__form-area
+    height: 176px
+
+.contact__form-area textarea
+    resize: none
+
+@media screen and (max-width: 992px)
+    .contact__container
+        column-gap: 48px
+
+@media screen and (max-width: 768px)
+    .contact__container
+        grid-template-columns: 1fr
+        row-gap: 48px
+
+    .contact__info
+        justify-content: center
+
+    .contact__form
+        margin: 0 auto
+
+@media screen and (max-width: 576px)
+    .contact__info
+        grid-template-columns: 1fr
+
+    .contact__form
+        width: 100%
+ 
+@media screen and (max-width: 350px)
+   
+ 
