@@ -1,25 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.845a9190.css",
-    "main.js": "/portfolio/static/js/main.caa43164.js",
+    "main.css": "/portfolio/static/css/main.588b9eab.css",
+    "main.js": "/portfolio/static/js/main.469ca0a8.js",
     "static/media/about.jpg": "/portfolio/static/media/about.75f2282d1442b93e2fa0.jpg",
     "static/media/CourierNewPSMT.eot": "/portfolio/static/media/CourierNewPSMT.86ff9390181ded7ee696.eot",
     "static/media/CourierNewPSMT.ttf": "/portfolio/static/media/CourierNewPSMT.c02b913e586cc63b61d8.ttf",
-    "static/media/CV - Jan Horčička.pdf": "/portfolio/static/media/CV - Jan Horčička.bbc5f15ac9e4448d3843.pdf",
+    "static/media/CV - Jan Horčička.pdf": "/portfolio/static/media/CV - Jan Horčička.b66cdcd2fd256bb41ae9.pdf",
     "static/media/CourierNewPSMT.woff": "/portfolio/static/media/CourierNewPSMT.623782a36e50c18de14f.woff",
     "static/media/CourierNewPSMT.woff2": "/portfolio/static/media/CourierNewPSMT.a682155c18439d3ab4c6.woff2",
     "static/media/profile.jpg": "/portfolio/static/media/profile.78cc53de801eaa64bef3.jpg",
     "static/media/work3.jpg": "/portfolio/static/media/work3.6ac9ca8eb2d88721b43c.jpg",
     "static/media/work1.jpg": "/portfolio/static/media/work1.d7b46975653a241ca1c9.jpg",
     "static/media/work5.jpg": "/portfolio/static/media/work5.66a1f7e733feaab56325.jpg",
-    "static/media/work4.jpg": "/portfolio/static/media/work4.aee985961b648f4df1f2.jpg",
-    "static/media/work2.jpg": "/portfolio/static/media/work2.094ec4a2224db8908873.jpg",
     "index.html": "/portfolio/index.html",
-    "main.845a9190.css.map": "/portfolio/static/css/main.845a9190.css.map",
-    "main.caa43164.js.map": "/portfolio/static/js/main.caa43164.js.map"
+    "main.588b9eab.css.map": "/portfolio/static/css/main.588b9eab.css.map",
+    "main.469ca0a8.js.map": "/portfolio/static/js/main.469ca0a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.845a9190.css",
-    "static/js/main.caa43164.js"
+    "static/css/main.588b9eab.css",
+    "static/js/main.469ca0a8.js"
   ]
 }
