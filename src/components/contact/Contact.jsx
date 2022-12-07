@@ -1,20 +1,65 @@
-import React, { useRef } from 'react';
+import React, { useRef,useState,useEffect  } from 'react';
 import emailjs from '@emailjs/browser';
 import "../../css/contact.css";
 
+
 const Contact = () => {
     const form = useRef();
+ 
+        const [submit,setSubmit]= useState(false);
+        const contactForm = document.getElementById("submit-form"),
+        contactName = document.getElementById('contact-name'),
+        contactEmail = document.getElementById('contact-email'),
+        Message = document.getElementById('message'),
+        contactMessage = document.getElementById('contact-message');
+         function sendEmail(e) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            if (
+                contactName.value === ''|| 
+                contactEmail.value === ''|| 
+                Message.value === ''
+                ) {
+                    // add and remove color
+                    contactMessage.classList.remove('color-light');
+                    contactMessage.classList.add('color-dark');    
+                    contactMessage.style.position = 'relative';
+                    //show message
+                    contactMessage.textContent = 'Prosím, vyplňte všechna pole';  
+                } else {  
+                    emailjs.sendForm(
+                        'service_7f69hq9', 
+                        'template_ppzrh5k', 
+                        '#submit-form', 
+                        'K43xwafKF7bfPftvj'
+                        )
+                        .then(() => {
+                            console.log(contactName.value);
+                            contactMessage.classList.add('color-dark');
+                            contactMessage.style.position = 'relative';
+                            contactMessage.textContent = 'Zpráva odeslána ✔️';
+                            
+                            // remove message 5sec
+                            let itms = document.querySelectorAll(".contact__form-input");
+                            for (let itm of itms) {
+                            itm.value = "";
+                            }
+                            setTimeout(() => {
+                                contactMessage.textContent = '';
+                                contactMessage.style.position = 'absolute';
+                            }, 5000);
+                        });
+                    };
+                };
+        useEffect(() => {
+        if (submit) {
+            contactForm.addEventListener('submit', sendEmail);
+            console.log("Reaload");
+        }
+    },[submit])
+    
+  
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_7f69hq9', 'template_ppzrh5k', form.current, 'K43xwafKF7bfPftvj')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-  };
 
     return (
         <section className="contact section" id="contact">
@@ -58,25 +103,27 @@ const Contact = () => {
                 <div className="contact__content">
                     <h3 className="contact__title">Dát vědět o sobě</h3>
 
-                    <form ref={form} onSubmit={sendEmail} className="contact__form">
+                    <form ref={form}  onSubmit={sendEmail} className="contact__form" id="submit-form">
                         <div className="contact__form-div">
                             <label className="contact__form-tag">Jméno</label>
-                            <input required type="text" name="name" className="contact__form-input" placeholder="Vložte své jméno"  />
+                            <input id="contact-name"  type="text" name="name" className="contact__form-input"  placeholder="Vložte své jméno a příjmení" />
                         </div>
 
                         <div className="contact__form-div">
                             <label className="contact__form-tag">Mail</label>
-                            <input required type="email" name="email" className="contact__form-input" placeholder="Vložte svůj email"  />
+                            <input id='contact-email' type="email" name="email" className="contact__form-input" placeholder="Vložte svůj email"  />
                         </div>
                         <div className="contact__form-div contact__form-area">
                             <label className="contact__form-tag">Zpráva</label>
-                            <textarea required name="project" cols="30" rows="10" className="contact__form-input" placeholder="Napište mi zprávu"></textarea>
+                            <textarea id='message' name="message" cols="30" rows="10" className="contact__form-input" placeholder="Napište mi zprávu" ></textarea>
                         </div>
 
-                        <button className="button button--flex">
-                        Send Message
+                        <p className='contact__form-div' id='contact-message'></p>
+
+                        <button onClick={()=>setSubmit(true)}className="button button--flex" type='submit' >
+                        Odeslat
                         <svg
-                  class="button__icon"
+                  className="button__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"

@@ -17,10 +17,10 @@ const About = () => {
                     <Info />
 
                     <p className="about__description">Začal jsem programovat v roce 2021 na jaře jako
-                      samouk a později na začátku podzimu jsem vstoupil
+                      samouk a později na začátku podzimu jsem se přihlasil
                       do kurzu programovaní, kde jsem úspěšně absolvoval
                       kurz škola kódů. Užívám si minimalistický a čístý kód. Pořád se vzdělávám a učím nové věci v oblasti kódů. Vždycky se
-                      snažím být připravený tvořit něco nového. Jsem zodpovědný a trochu punktuální. Sportuji.</p>
+                      snažím být připravený tvořit něco nového. Jsem zodpovědný a trochu punktuální. Rád sportuji.</p>
                     <a download="" href={CV} className="button button--flex">
                         Stáhnout CV
                         <svg

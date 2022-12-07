@@ -116,6 +116,21 @@
   resize: none;
 }
 
+#contact-message {
+  position: absolute;
+  height: 0px;
+  margin-top: -24px;
+}
+
+.color-light {
+  opacity: 0;
+  color: rgb(61, 152, 147);
+}
+
+.color-dark {
+  opacity: 0.4;
+}
+
 @media screen and (max-width: 992px) {
   .contact__container {
     column-gap: 48px;
